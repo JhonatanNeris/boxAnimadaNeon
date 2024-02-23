@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            color: rgb(255 , 255, 255);
+        }
+        .container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .box{
+            position: relative;
+            width: 300px;
+            height: 400px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(19, 19, 19);
+            overflow: hidden;
+            padding: 5px 30px;
+            margin: 20px;
+        }
+        .box::before{
+            content: "";
+            position: absolute;
+            height: 490px;
+            width: 130px;
+            background: linear-gradient(#00ccff,#d400d4);
+            animation: animacao 5s linear infinite;
+        }
+        .box::after{
+            content: "";
+            position: absolute;
+            inset: 7px;
+            background: rgb(68, 68, 68);
+            border-radius: 10px;            
+        }  
+        .box p{
+            z-index: 100;
+        }
+        .box img{
+            z-index: 100;
+            width: 180px;
+            
+        }
+        .box h2{
+            z-index: 1;
+            font-size: 25px;
+            font-weight: 900;
+        }
+        @keyframes animacao
+        {
+            0%
+            {
+              transform: rotate(0deg);  
+            }
+            100%
+            {
+              transform: rotate(360deg);  
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>PRODUTO</h2>
+            <img src="tenisnike.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident similique consequuntur repellat mollitia? Consequatur ullam libero tempora quisquam sed fuga perspiciatis aliquam, numquam laboriosam, iure quo soluta ab obcaecati commodi.</p>
+        </div>
+        <div class="box">
+            <h2>PRODUTO</h2>
+            <img src="tenisnike.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident similique consequuntur repellat mollitia? Consequatur ullam libero tempora quisquam sed fuga perspiciatis aliquam, numquam laboriosam, iure quo soluta ab obcaecati commodi.</p>
+        </div>
+        <div class="box">
+            <h2>PRODUTO</h2>
+            <img src="tenisnike.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident similique consequuntur repellat mollitia? Consequatur ullam libero tempora quisquam sed fuga perspiciatis aliquam, numquam laboriosam, iure quo soluta ab obcaecati commodi.</p>
+        </div>
+        <div class="box">
+            <h2>PRODUTO</h2>
+            <img src="tenisnike.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident similique consequuntur repellat mollitia? Consequatur ullam libero tempora quisquam sed fuga perspiciatis aliquam, numquam laboriosam, iure quo soluta ab obcaecati commodi.</p>
+        </div>
+        <div class="box">
+            <h2>PRODUTO</h2>
+            <img src="tenisnike.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident similique consequuntur repellat mollitia? Consequatur ullam libero tempora quisquam sed fuga perspiciatis aliquam, numquam laboriosam, iure quo soluta ab obcaecati commodi.</p>
+        </div>
+        <div class="box">
+            <h2>PRODUTO</h2>
+            <img src="tenisnike.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident similique consequuntur repellat mollitia? Consequatur ullam libero tempora quisquam sed fuga perspiciatis aliquam, numquam laboriosam, iure quo soluta ab obcaecati commodi.</p>
+        </div>
+        <div class="box">
+            <h2>PRODUTO</h2>
+            <img src="tenisnike.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident similique consequuntur repellat mollitia? Consequatur ullam libero tempora quisquam sed fuga perspiciatis aliquam, numquam laboriosam, iure quo soluta ab obcaecati commodi.</p>
+        </div>
+        <div class="box">
+            <h2>PRODUTO</h2>
+            <img src="tenisnike.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident similique consequuntur repellat mollitia? Consequatur ullam libero tempora quisquam sed fuga perspiciatis aliquam, numquam laboriosam, iure quo soluta ab obcaecati commodi.</p>
+        </div>
+        <div class="box">
+            <h2>PRODUTO</h2>
+            <img src="tenisnike.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident similique consequuntur repellat mollitia? Consequatur ullam libero tempora quisquam sed fuga perspiciatis aliquam, numquam laboriosam, iure quo soluta ab obcaecati commodi.</p>
+        </div>
+        <div class="box">
+            <h2>PRODUTO</h2>
+            <img src="tenisnike.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident similique consequuntur repellat mollitia? Consequatur ullam libero tempora quisquam sed fuga perspiciatis aliquam, numquam laboriosam, iure quo soluta ab obcaecati commodi.</p>
+        </div>
+        <div class="box">
+            <h2>PRODUTO</h2>
+            <img src="tenisnike.png" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident similique consequuntur repellat mollitia? Consequatur ullam libero tempora quisquam sed fuga perspiciatis aliquam, numquam laboriosam, iure quo soluta ab obcaecati commodi.</p>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>
